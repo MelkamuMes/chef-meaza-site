@@ -103,7 +103,7 @@ const Footer = () => {
               </div>
               <div>
                 <h3 className="text-2xl font-bold font-playfair bg-gradient-to-r from-amber-400 to-orange-500 bg-clip-text text-transparent">
-                  Elena Martinez
+                  Meaza Mesene
                 </h3>
                 <p className="text-sm text-gray-400">International Culinary Expert</p>
               </div>
@@ -117,7 +117,7 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-sm">
                 <Mail className="w-4 h-4 text-amber-500" />
-                <span className="text-gray-300">elena.martinez@chef.com</span>
+                <span className="text-gray-300">meaza.mesene@gmail.com</span>
               </div>
               <div className="flex items-center gap-3 text-sm">
                 <Phone className="w-4 h-4 text-amber-500" />
@@ -125,7 +125,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3 text-sm">
                 <MapPin className="w-4 h-4 text-amber-500" />
-                <span className="text-gray-300">Dubai, UAE</span>
+                <span className="text-gray-300">Ethiopia, Hawassa</span>
               </div>
             </div>
 
