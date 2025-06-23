@@ -1,0 +1,345 @@
+'use client';
+
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import { useLanguage } from '@/components/language-provider';
+import { Card, CardContent } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import { 
+  Trophy,
+  Award,
+  Star,
+  Medal,
+  Crown,
+  Calendar,
+  MapPin,
+  ExternalLink
+} from 'lucide-react';
+
+const Achievements = () => {
+  const { t } = useLanguage();
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
+  const majorAwards = [
+    {
+      title: "World Culinary Awards - Chef of the Year",
+      year: "2023",
+      organization: "World Culinary Association",
+      location: "Dubai, UAE",
+      description: "Recognized for exceptional leadership and innovation in international luxury hospitality culinary arts",
+      category: "International",
+      icon: Crown,
+      color: "text-yellow-600",
+      bgColor: "bg-yellow-100 dark:bg-yellow-900/20"
+    },
+    {
+      title: "Michelin Guide - Recommended Restaurant",
+      year: "2022",
+      organization: "Michelin Guide",
+      location: "Dubai, UAE",
+      description: "The Ritz-Carlton Dubai's signature restaurant earned Michelin recognition under my leadership",
+      category: "Michelin",
+      icon: Star,
+      color: "text-red-600",
+      bgColor: "bg-red-100 dark:bg-red-900/20"
+    },
+    {
+      title: "James Beard Foundation - Rising Chef",
+      year: "2019",
+      organization: "James Beard Foundation",
+      location: "New York, USA",
+      description: "Honored for innovative approach to sustainable seafood and Mediterranean cuisine",
+      category: "National",
+      icon: Award,
+      color: "text-blue-600",
+      bgColor: "bg-blue-100 dark:bg-blue-900/20"
+    },
+    {
+      title: "UAE Hospitality Excellence Award",
+      year: "2023",
+      organization: "UAE Ministry of Tourism",
+      location: "Abu Dhabi, UAE",
+      description: "Outstanding contribution to elevating UAE's culinary reputation on the global stage",
+      category: "Government",
+      icon: Trophy,
+      color: "text-green-600",
+      bgColor: "bg-green-100 dark:bg-green-900/20"
+    }
+  ];
+
+  const professionalRecognitions = [
+    {
+      title: "Featured Chef - Conde Nast Traveler",
+      year: "2023",
+      type: "Media Recognition"
+    },
+    {
+      title: "Top 40 Under 40 Chefs - Food & Wine",
+      year: "2021",
+      type: "Industry Recognition"
+    },
+    {
+      title: "Sustainable Seafood Champion",
+      year: "2022",
+      type: "Environmental Award"
+    },
+    {
+      title: "Best Fine Dining Experience - Time Out Dubai",
+      year: "2023",
+      type: "Local Recognition"
+    },
+    {
+      title: "International Culinary Educator",
+      year: "2022",
+      type: "Educational Honor"
+    },
+    {
+      title: "Women in Hospitality Leadership Award",
+      year: "2021",
+      type: "Leadership Recognition"
+    }
+  ];
+
+  const mediaFeatures = [
+    {
+      outlet: "CNN Travel",
+      title: "Dubai's Rising Culinary Stars",
+      year: "2023",
+      type: "International Feature"
+    },
+    {
+      outlet: "Food Network",
+      title: "Masters of Mediterranean Cuisine",
+      year: "2022",
+      type: "TV Documentary"
+    },
+    {
+      outlet: "BBC Good Food",
+      title: "Sustainable Luxury Dining",
+      year: "2023",
+      type: "Print Feature"
+    },
+    {
+      outlet: "The World's 50 Best",
+      title: "Emerging Talent Spotlight",
+      year: "2021",
+      type: "Industry Publication"
+    }
+  ];
+
+  return (
+    <section id="achievements" className="py-20 lg:py-32 relative overflow-hidden">
+      {/* Background decorations */}
+      <div className="absolute inset-0 bg-gradient-to-br from-yellow-50/50 via-transparent to-amber-50/50 dark:from-yellow-950/20 dark:to-amber-950/20" />
+      
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <motion.div
+          ref={ref}
+          initial={{ opacity: 0, y: 50 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8 }}
+          className="text-center mb-16"
+        >
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={inView ? { opacity: 1, scale: 1 } : {}}
+            transition={{ delay: 0.2, duration: 0.6 }}
+            className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-yellow-500 to-amber-600 rounded-full mb-6"
+          >
+            <Trophy className="w-8 h-8 text-white" />
+          </motion.div>
+          
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-playfair mb-4">
+            {t('achievements.title')}
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            {t('achievements.subtitle')}
+          </p>
+        </motion.div>
+
+        {/* Major Awards */}
+        <div className="mb-20">
+          <motion.h3
+            initial={{ opacity: 0, x: -30 }}
+            animate={inView ? { opacity: 1, x: 0 } : {}}
+            transition={{ delay: 0.4, duration: 0.6 }}
+            className="text-2xl font-bold mb-8 text-center"
+          >
+            Major Awards & Honors
+          </motion.h3>
+          
+          <div className="grid lg:grid-cols-2 gap-8">
+            {majorAwards.map((award, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 50 }}
+                animate={inView ? { opacity: 1, y: 0 } : {}}
+                transition={{ delay: 0.6 + index * 0.1, duration: 0.8 }}
+                whileHover={{ scale: 1.02 }}
+              >
+                <Card className="h-full hover:shadow-xl transition-all duration-300 border-l-4 border-l-yellow-500">
+                  <CardContent className="p-8">
+                    <div className="flex items-start gap-4">
+                      <div className={`p-3 rounded-full ${award.bgColor}`}>
+                        <award.icon className={`w-8 h-8 ${award.color}`} />
+                      </div>
+                      
+                      <div className="flex-1">
+                        <div className="flex items-center justify-between mb-2">
+                          <Badge variant="outline" className="mb-2">
+                            {award.category}
+                          </Badge>
+                        </div>
+                        
+                        <h4 className="text-xl font-bold text-foreground mb-2">
+                          {award.title}
+                        </h4>
+                        
+                        <div className="flex items-center gap-4 text-sm text-muted-foreground mb-3">
+                          <div className="flex items-center gap-1">
+                            <Calendar className="w-4 h-4" />
+                            {award.year}
+                          </div>
+                          <div className="flex items-center gap-1">
+                            <MapPin className="w-4 h-4" />
+                            {award.location}
+                          </div>
+                        </div>
+                        
+                        <p className="text-yellow-600 font-medium mb-3">
+                          {award.organization}
+                        </p>
+                        
+                        <p className="text-muted-foreground text-sm leading-relaxed">
+                          {award.description}
+                        </p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+
+        {/* Professional Recognitions */}
+        <div className="grid lg:grid-cols-2 gap-12 mb-20">
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            animate={inView ? { opacity: 1, x: 0 } : {}}
+            transition={{ delay: 0.8, duration: 0.8 }}
+          >
+            <Card className="h-full">
+              <CardContent className="p-8">
+                <div className="flex items-center gap-3 mb-6">
+                  <Medal className="w-8 h-8 text-purple-600" />
+                  <h3 className="text-2xl font-bold">Professional Recognition</h3>
+                </div>
+                
+                <div className="space-y-4">
+                  {professionalRecognitions.map((recognition, index) => (
+                    <motion.div
+                      key={index}
+                      initial={{ opacity: 0, x: -20 }}
+                      animate={inView ? { opacity: 1, x: 0 } : {}}
+                      transition={{ delay: 1.0 + index * 0.1, duration: 0.6 }}
+                      className="flex items-center justify-between p-4 rounded-lg bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-950/20 dark:to-pink-950/20 border border-purple-200/50 dark:border-purple-800/50"
+                    >
+                      <div>
+                        <h4 className="font-semibold text-foreground">
+                          {recognition.title}
+                        </h4>
+                        <p className="text-sm text-muted-foreground">
+                          {recognition.type}
+                        </p>
+                      </div>
+                      <Badge variant="secondary" className="bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200">
+                        {recognition.year}
+                      </Badge>
+                    </motion.div>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            animate={inView ? { opacity: 1, x: 0 } : {}}
+            transition={{ delay: 0.8, duration: 0.8 }}
+          >
+            <Card className="h-full">
+              <CardContent className="p-8">
+                <div className="flex items-center gap-3 mb-6">
+                  <ExternalLink className="w-8 h-8 text-blue-600" />
+                  <h3 className="text-2xl font-bold">Media Features</h3>
+                </div>
+                
+                <div className="space-y-4">
+                  {mediaFeatures.map((feature, index) => (
+                    <motion.div
+                      key={index}
+                      initial={{ opacity: 0, x: 20 }}
+                      animate={inView ? { opacity: 1, x: 0 } : {}}
+                      transition={{ delay: 1.0 + index * 0.1, duration: 0.6 }}
+                      className="p-4 rounded-lg bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-blue-950/20 dark:to-cyan-950/20 border border-blue-200/50 dark:border-blue-800/50 hover:shadow-md transition-shadow duration-300"
+                    >
+                      <div className="flex items-center justify-between mb-2">
+                        <h4 className="font-semibold text-blue-600">
+                          {feature.outlet}
+                        </h4>
+                        <Badge variant="outline" className="text-xs">
+                          {feature.year}
+                        </Badge>
+                      </div>
+                      <p className="font-medium text-foreground mb-1">
+                        {feature.title}
+                      </p>
+                      <p className="text-sm text-muted-foreground">
+                        {feature.type}
+                      </p>
+                    </motion.div>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          </motion.div>
+        </div>
+
+        {/* Achievement Stats */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ delay: 1.2, duration: 0.8 }}
+          className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center bg-gradient-to-r from-yellow-500/10 to-amber-500/10 rounded-2xl p-8 border border-yellow-200/50 dark:border-yellow-800/50"
+        >
+          <div className="space-y-2">
+            <Trophy className="w-8 h-8 text-yellow-600 mx-auto" />
+            <div className="text-3xl font-bold text-yellow-600">15+</div>
+            <div className="text-sm text-muted-foreground">Major Awards</div>
+          </div>
+          <div className="space-y-2">
+            <Star className="w-8 h-8 text-amber-600 mx-auto" />
+            <div className="text-3xl font-bold text-amber-600">25+</div>
+            <div className="text-sm text-muted-foreground">Media Features</div>
+          </div>
+          <div className="space-y-2">
+            <Medal className="w-8 h-8 text-orange-600 mx-auto" />
+            <div className="text-3xl font-bold text-orange-600">10+</div>
+            <div className="text-sm text-muted-foreground">Industry Honors</div>
+          </div>
+          <div className="space-y-2">
+            <Crown className="w-8 h-8 text-red-600 mx-auto" />
+            <div className="text-3xl font-bold text-red-600">5</div>
+            <div className="text-sm text-muted-foreground">International Titles</div>
+          </div>
+        </motion.div>
+      </div>
+    </section>
+  );
+};
+
+export default Achievements;
