@@ -25,23 +25,23 @@ const About = () => {
 
   const educationData = [
     {
-      institution: "Le Cordon Bleu Paris",
-      degree: "Diploma in Culinary Arts",
+      institution: "Selam TVET College & Hawassa Polytechnic College",
+      degree: "Graduated with 10+4 Diploma in Food Production Supervision",
       year: "2008",
       description: "Advanced French culinary techniques and classical cooking methods"
     },
-    {
-      institution: "Johnson & Wales University",
-      degree: "Bachelor's in Culinary Arts Management",
-      year: "2006",
-      description: "Business management and culinary leadership"
-    },
-    {
-      institution: "Instituto Culinario de México",
-      degree: "Certificate in Latin American Cuisine",
-      year: "2010",
-      description: "Traditional and contemporary Latin American cooking"
-    }
+    // {
+    //   institution: "Johnson & Wales University",
+    //   degree: "Bachelor's in Culinary Arts Management",
+    //   year: "2006",
+    //   description: "Business management and culinary leadership"
+    // },
+    // {
+    //   institution: "Instituto Culinario de México",
+    //   degree: "Certificate in Latin American Cuisine",
+    //   year: "2010",
+    //   description: "Traditional and contemporary Latin American cooking"
+    // }
   ];
 
   const personalValues = [
@@ -58,12 +58,12 @@ const About = () => {
     {
       icon: Globe,
       title: "Cultural Fusion",
-      description: "Blending international flavors with local ingredients"
+      description: "Pushing culinary boundaries while respecting traditions"
     },
     {
       icon: TrendingUp,
       title: "Innovation",
-      description: "Pushing culinary boundaries while respecting traditions"
+      description: "Blending tradition with creative modern cuisine"
     }
   ];
 
@@ -105,11 +105,12 @@ const About = () => {
             transition={{ delay: 0.4, duration: 0.8 }}
             className="space-y-8"
           >
-            <div className="relative">
-              <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
+            <div className="relative w-[40vw] h-50">
+              <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://images.pexels.com/photos/3298637/pexels-photo-3298637.jpeg?auto=compress&cs=tinysrgb&w=800"
-                  alt="Chef Elena in kitchen"
+                 src='/images/maedit3h.png'
+                  // src="https://images.pexels.com/photos/3298637/pexels-photo-3298637.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  alt="Chef Meaza in kitchen"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />

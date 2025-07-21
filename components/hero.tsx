@@ -11,9 +11,13 @@ const Hero = () => {
 
   const handleDownloadResume = () => {
     const link = document.createElement('a');
-    link.href = '/resume-elena-martinez.pdf';
-    link.download = 'Elena_Martinez_Resume.pdf';
+    link.href = '/Meaza Cv.pdf';
+    link.download = 'Meaza Cv.pdf';
     link.click();
+  };
+
+  const handleOpenResume = () => {
+    window.open('/Meaza Cv.pdf', '_blank', 'noopener,noreferrer');
   };
 
   const scrollToContact = () => {
@@ -103,16 +107,16 @@ const Hero = () => {
               className="flex flex-wrap justify-center lg:justify-start gap-8"
             >
               <div className="text-center">
-                <div className="text-3xl font-bold text-amber-600">15+</div>
+                <div className="text-3xl font-bold text-amber-600">9+</div>
                 <div className="text-sm text-muted-foreground">Years Experience</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-orange-600">50+</div>
+                <div className="text-3xl font-bold text-orange-600">Haile </div>
                 <div className="text-sm text-muted-foreground">Hotels & Resorts</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-red-600">25+</div>
-                <div className="text-sm text-muted-foreground">Countries</div>
+                <div className="text-3xl font-bold text-red-600"> chef</div>
+                <div className="text-sm text-muted-foreground">Chef de Partie</div>
               </div>
             </motion.div>
 
@@ -125,7 +129,7 @@ const Hero = () => {
             >
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4 text-amber-600" />
-                <span>Based in Dubai, UAE</span>
+                <span>Based in Hawassa, Ethiopia</span>
               </div>
               <div className="flex items-center gap-2">
                 <div className="flex">
@@ -156,6 +160,7 @@ const Hero = () => {
                   <Download className="w-5 h-5 mr-2" />
                   {t('hero.cta.resume')}
                 </Button>
+                
               </motion.div>
               <motion.div
                 whileHover={{ scale: 1.05 }}
@@ -173,6 +178,7 @@ const Hero = () => {
               </motion.div>
             </motion.div>
           </motion.div>
+          
 
           {/* Right Column - Image */}
           <motion.div
@@ -181,18 +187,19 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="relative"
           >
-            <div className="relative w-full max-w-lg mx-auto">
+            <div className="relative w-90 max-w-lg mx-auto h-[100]">
               {/* Decorative background */}
               <div className="absolute -inset-4 bg-gradient-to-r from-amber-500 to-orange-600 rounded-3xl blur-2xl opacity-20" />
               
               {/* Main image container */}
               <div className="relative bg-gradient-to-br from-amber-100 to-orange-100 dark:from-amber-900/20 dark:to-orange-900/20 rounded-3xl p-8 shadow-2xl">
-                <div className="aspect-[3/4] relative rounded-2xl overflow-hidden bg-gray-200 dark:bg-gray-700">
+                <div className="aspect-[9/16] relative rounded-2xl overflow-hidden bg-gray-200 dark:bg-gray-700">
                   {/* Placeholder for chef image */}
                   <img
-                    src="https://images.pexels.com/photos/3758105/pexels-photo-3758105.jpeg?auto=compress&cs=tinysrgb&w=800"
-                    alt="Chef Elena Martinez"
-                    className="w-full h-full object-cover"
+                    // src="https://images.pexels.com/photos/3758105/pexels-photo-3758105.jpeg?auto=compress&cs=tinysrgb&w=800"
+                    src='/images/maedit1.png'
+                    alt="Chef Meaza Mesene"
+                    className="w-full h-full object-fill"
                   />
                   
                   {/* Overlay with decorative elements */}

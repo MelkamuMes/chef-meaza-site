@@ -27,15 +27,15 @@ const translations = {
     'hero.greeting': 'Hello, I\'m',
     'hero.name': 'Meaza Mesene',
     'hero.title': 'International Culinary Expert',
-    'hero.subtitle': 'Passionate chef with 11+ years of experience in luxury hotels and resorts worldwide',
+    'hero.subtitle': 'Passionate chef with 9+ years of experience in Haile Grand International luxury hotel and resort',
     'hero.cta.resume': 'Download Resume',
     'hero.cta.contact': 'Get in Touch',
     
     // About Section
     'about.title': 'About Me',
     'about.subtitle': 'Culinary Journey & Passion',
-    'about.description': 'With over 15 years of experience in international culinary arts, I have dedicated my career to creating exceptional dining experiences in luxury hotels and resorts across the globe. My passion for cooking began in my grandmother\'s kitchen and has evolved into a professional journey that spans multiple continents and cuisines.',
-    'about.mission': 'My mission is to blend traditional techniques with modern innovation, creating memorable culinary experiences that celebrate both local ingredients and international flavors.',
+    'about.description': `I am Chef Meaza Mesene, a passionate and detail-driven Chef de Partie with over 9 years of professional experience in the culinary world, currently working at Haile Resorts – Hawassa. I specialize in food production, safety standards, and kitchen operations within the luxury hospitality sector. In my career, I have led food preparation programs, implemented HACCP protocols, and ensured operational excellence from ingredient receiving to serving plated dishes. My leadership in coaching kitchen teams, managing KPIs, and maintaining the highest hygiene and safety standards has been instrumental in creating seamless culinary operations. `,
+    'about.mission': 'My mission is to blend traditional Ethiopian techniques with global innovations—crafting unforgettable culinary experiences rooted in culture, safety, and creativity.',
     
     // Experience Section
     'experience.title': 'Professional Experience',

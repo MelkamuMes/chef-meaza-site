@@ -27,14 +27,14 @@ const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
-      name: "James Richardson",
-      title: "General Manager",
-      company: "The Ritz-Carlton Dubai",
-      location: "Dubai, UAE",
+      name: "Mr. Melaku Gudeta",
+      title: "Ex-Operational Manager",
+      company: "Haile Resort Hawassa",
+      location: "Hawassa, UAE",
       image: "https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg?auto=compress&cs=tinysrgb&w=200",
       rating: 5,
-      testimonial: "Elena has transformed our culinary operations beyond recognition. Her leadership, creativity, and unwavering commitment to excellence have elevated our restaurants to Michelin recognition. She doesn't just cook; she creates experiences that guests remember for a lifetime.",
-      relationship: "Direct Supervisor",
+      testimonial: "Chef Meaza, congratulations on being named Third Best Supervisor of the Year! Your hard work, leadership, and positive attitude inspire us every day. Even after the busiest shifts, your dedication and smile never fade. Thank you for making our team stronger and our workplace brighter. Well deserved—we’re so proud of you!.",
+      relationship: "Ex-Operational Manager",
       duration: "3+ years working together"
     },
     {

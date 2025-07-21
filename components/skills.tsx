@@ -25,41 +25,41 @@ const Skills = () => {
   });
 
   const technicalSkills = [
-    { name: "French Cuisine", level: 95, icon: "🇫🇷", color: "bg-blue-500" },
-    { name: "Mediterranean", level: 90, icon: "🫒", color: "bg-green-500" },
-    { name: "Asian Fusion", level: 85, icon: "🥢", color: "bg-red-500" },
-    { name: "Seafood Specialization", level: 98, icon: "🐟", color: "bg-cyan-500" },
-    { name: "Pastry & Desserts", level: 80, icon: "🧁", color: "bg-pink-500" },
-    { name: "Molecular Gastronomy", level: 75, icon: "⚗️", color: "bg-purple-500" },
-    { name: "Farm-to-Table", level: 88, icon: "🌱", color: "bg-green-600" },
-    { name: "Wine Pairing", level: 82, icon: "🍷", color: "bg-red-600" }
+    { name: " Ethiopian Traditional Cuisine", level: 95, icon: "🇪🇹", color: "bg-blue-500" },
+    { name: " Food Safety & Hygiene", level: 90, icon: "🥦", color: "bg-green-500" },
+    { name: " Large-Scale Food Production", level: 85, icon: " 🥘", color: "bg-red-500" },
+    { name: "Menu Execution & Quality Control", level: 98, icon: "🍛", color: "bg-cyan-500" },
+    { name: "Ingredient Handling & Preparation", level: 80, icon: "🧂", color: "bg-pink-500" },
+    { name: "Kitchen Sanitation Procedures ", level: 75, icon: "🧼 ", color: "bg-purple-500" },
+    { name: "Team Supervision in Hotel Kitchens", level: 88, icon: "🧑‍🍳", color: "bg-green-600" },
+    // { name: "Wine Pairing", level: 82, icon: "🍷", color: "bg-red-600" }
   ];
 
   const managementSkills = [
-    { name: "Team Leadership", level: 95 },
-    { name: "Menu Development", level: 92 },
-    { name: "Cost Control", level: 88 },
-    { name: "Quality Assurance", level: 96 },
-    { name: "Staff Training", level: 90 },
-    { name: "Event Management", level: 85 }
+    { name: "Team Leadership & Mentorship", level: 95 },
+    { name: "Food Production SOPs", level: 92 },
+    { name: "KPI Monitoring & Goal Alignment", level: 88 },
+    { name: "Hazard Analysis (HACCP)", level: 96 },
+    { name: "Sanitization Systems & Chemical Handling", level: 90 },
+    { name: "Training & Staff Coaching", level: 85 }
   ];
 
   const certifications = [
     {
-      title: "ServSafe Food Protection Manager",
-      issuer: "National Restaurant Association",
-      year: "2023",
+      title: " HACCP & Food Safety Management System",
+      issuer: "Haile Resort Hawassa",
+      year: "December 2024",
       icon: Award
     },
     {
-      title: "HACCP Certification",
-      issuer: "International HACCP Alliance",
+      title: "IDS System & Microsoft Office Tools",
+      Trained: "Microsoft Word & Excel for kitchen data and reports",
       year: "2022",
       icon: BookOpen
     },
     {
-      title: "Wine & Spirit Education Trust Level 3",
-      issuer: "WSET",
+      title: "Food Nutrition & Safety Workshops",
+      includes: "Quality Policy, Service Culture Implementation, and Cleaning Chemical Application",
       year: "2021",
       icon: Coffee
     },
@@ -72,14 +72,14 @@ const Skills = () => {
   ];
 
   const cuisineExpertise = [
-    { name: "French Classical", years: 15, flag: "🇫🇷" },
-    { name: "Mediterranean", years: 12, flag: "🇮🇹" },
-    { name: "Japanese", years: 8, flag: "🇯🇵" },
-    { name: "Middle Eastern", years: 10, flag: "🇱🇧" },
-    { name: "Indian", years: 6, flag: "🇮🇳" },
-    { name: "Latin American", years: 9, flag: "🇲🇽" },
-    { name: "Thai", years: 7, flag: "🇹🇭" },
-    { name: "Modern American", years: 11, flag: "🇺🇸" }
+    { name: "Continental & Resort Cuisine", years: 9, },
+    { name: "Buffet & Banquet Service Standards", years: 7, },
+    { name: "Modern Local + Global Fusion Dishes", years: 6,  },
+    // { name: "Middle Eastern", years: 8, flag: "🇱🇧" },
+    // { name: "Indian", years: 6, flag: "🇮🇳" },
+    // { name: "Latin American", years: 7, flag: "🇲🇽" },
+    // { name: "Thai", years: 6, flag: "🇹🇭" },
+    // { name: "Modern American", years: 9, flag: "🇺🇸" }
   ];
 
   return (
@@ -270,14 +270,14 @@ const Skills = () => {
           <h3 className="text-2xl font-bold mb-4">Core Competencies</h3>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              "Michelin-Star Standards",
-              "International Team Leadership",
-              "Menu Innovation",
-              "Cost Optimization",
-              "Sustainable Practices",
-              "Cultural Fusion",
-              "Fine Dining Excellence",
-              "Training & Development"
+              " Food Safety & HACCP Enforcement",
+              "Staff Training & Performance Coaching",
+              " SOP Development for Kitchen Operations",
+              "Quality Control & Kitchen Auditing",
+              "Clean Cooking & Cross-Contamination Prevention",
+              "Storage, Holding, & Serving Protocols",
+              // "Fine Dining Excellence",
+              // "Training & Development"
             ].map((competency, index) => (
               <motion.div
                 key={competency}

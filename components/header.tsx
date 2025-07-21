@@ -49,8 +49,8 @@ const Header = () => {
   const handleDownloadResume = () => {
     // In a real application, this would download the actual resume file
     const link = document.createElement('a');
-    link.href = '/resume-elena-martinez.pdf';
-    link.download = 'Elena_Martinez_Resume.pdf';
+    link.href = '/Meaza Cv.docx';
+    link.download = 'Meaza Cv.docx';
     link.click();
   };
 
