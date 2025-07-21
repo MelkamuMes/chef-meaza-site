@@ -143,6 +143,7 @@ const Achievements = () => {
   {
     title: "HACCP Certification",
     year: "2024",
+    proofType: "Certificate",
     organization: "Food Safety Authority",
     description: "Certified in Hazard Analysis and Critical Control Points for food safety management.",
     imageUrl: "/images/c1.png", // Add this
@@ -155,6 +156,7 @@ const Achievements = () => {
   {
     title: "Culinary Arts Diploma",
     year: "2018",
+    proofType: "Certificate",
     organization: "International Culinary Institute",
     description: "Professional diploma in culinary arts with specialization in international cuisine.",
     imageUrl: "/images/c2.png", // Add this
@@ -166,6 +168,7 @@ const Achievements = () => {
   {
     title: "Culinary Arts Diploma",
     year: "2018",
+    proofType: "Certificate",
     organization: "International Culinary Institute",
     description: "Professional diploma in culinary arts with specialization in international cuisine.",
     imageUrl: "/images/c3.png", // Add this
@@ -177,6 +180,7 @@ const Achievements = () => {
   {
     title: "Culinary Arts Diploma",
     year: "2018",
+    proofType: "Certificate",
     organization: "International Culinary Institute",
     description: "Professional diploma in culinary arts with specialization in international cuisine.",
     imageUrl: "/images/c4.png", // Add this
@@ -188,6 +192,7 @@ const Achievements = () => {
   {
     title: "Culinary Arts Diploma",
     year: "2018",
+    proofType: "Certificate",
     organization: "International Culinary Institute",
     description: "Professional diploma in culinary arts with specialization in international cuisine.",
     imageUrl: "/images/c5.png", // Add this
@@ -199,6 +204,7 @@ const Achievements = () => {
   {
     title: "Culinary Arts Diploma",
     year: "2018",
+    proofType: "Certificate",
     organization: "International Culinary Institute",
     description: "Professional diploma in culinary arts with specialization in international cuisine.",
     imageUrl: "/images/c6.png", // Add this
