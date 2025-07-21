@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { useState } from 'react'; // Add this with other imports
 import { useLanguage } from '@/components/language-provider';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -14,6 +15,7 @@ import {
   Calendar,
   MapPin,
   ExternalLink,
+  X,
   FileText,
   FileBadge,
   FileImage,
@@ -21,6 +23,8 @@ import {
 } from 'lucide-react';
 
 const Achievements = () => {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const { t } = useLanguage();
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -141,8 +145,8 @@ const Achievements = () => {
     year: "2024",
     organization: "Food Safety Authority",
     description: "Certified in Hazard Analysis and Critical Control Points for food safety management.",
-    proofType: "PDF Certificate",
-    proofUrl: "#", // Replace with actual URL
+    imageUrl: "/images/c1.png", // Add this
+    downloadUrl: "/images/docs/c1-1.pdf",
     icon: FileBadge,
     color: "text-purple-600",
     bgColor: "bg-purple-100 dark:bg-purple-900/20",
@@ -153,8 +157,52 @@ const Achievements = () => {
     year: "2018",
     organization: "International Culinary Institute",
     description: "Professional diploma in culinary arts with specialization in international cuisine.",
-    proofType: "Scanned Document",
-    proofUrl: "#",
+    imageUrl: "/images/c2.png", // Add this
+    downloadUrl: "/images/docs/c1-2.pdf", // Add this
+    icon: FileText,
+    color: "text-blue-600",
+    bgColor: "bg-blue-100 dark:bg-blue-900/20"
+  },
+  {
+    title: "Culinary Arts Diploma",
+    year: "2018",
+    organization: "International Culinary Institute",
+    description: "Professional diploma in culinary arts with specialization in international cuisine.",
+    imageUrl: "/images/c3.png", // Add this
+    downloadUrl: "/images/docs/c1-3.pdf", // Add this
+    icon: FileText,
+    color: "text-blue-600",
+    bgColor: "bg-blue-100 dark:bg-blue-900/20"
+  },
+  {
+    title: "Culinary Arts Diploma",
+    year: "2018",
+    organization: "International Culinary Institute",
+    description: "Professional diploma in culinary arts with specialization in international cuisine.",
+    imageUrl: "/images/c4.png", // Add this
+    downloadUrl: "/images/docs/c1-4.pdf",// Add this
+    icon: FileText,
+    color: "text-blue-600",
+    bgColor: "bg-blue-100 dark:bg-blue-900/20"
+  },
+  {
+    title: "Culinary Arts Diploma",
+    year: "2018",
+    organization: "International Culinary Institute",
+    description: "Professional diploma in culinary arts with specialization in international cuisine.",
+    imageUrl: "/images/c5.png", // Add this
+    downloadUrl: "/images/docs/c1-5.pdf",// Add this
+    icon: FileText,
+    color: "text-blue-600",
+    bgColor: "bg-blue-100 dark:bg-blue-900/20"
+  },
+  {
+    title: "Culinary Arts Diploma",
+    year: "2018",
+    organization: "International Culinary Institute",
+    description: "Professional diploma in culinary arts with specialization in international cuisine.",
+    imageUrl: "/images/c6.png", // Add this
+    downloadUrl: "/images/docs/c1-6.pdf", // Add this
     icon: FileText,
     color: "text-blue-600",
     bgColor: "bg-blue-100 dark:bg-blue-900/20"
@@ -307,16 +355,17 @@ const Achievements = () => {
                   {cert.description}
                 </p>
                 
-                <div className="flex gap-3">
-                  <a 
-                    href={cert.proofUrl} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
+                <div className="flex gap-3 flex-wrap">
+                 <button
+                    onClick={() => {
+                      setSelectedImage(cert.imageUrl);
+                      setIsModalOpen(true);
+                    }}
                     className="inline-flex items-center gap-2 text-sm font-medium text-purple-600 hover:text-purple-800 dark:hover:text-purple-400 transition-colors px-3 py-1.5 rounded-md bg-purple-50 dark:bg-purple-900/30"
                   >
                     <FileImage className="w-4 h-4" />
                     View Proof
-                  </a>
+                  </button>
                   <a 
                     href={cert.proofUrl} 
                     download
@@ -325,7 +374,7 @@ const Achievements = () => {
                     <Download className="w-4 h-4" />
                     Download
                   </a>
-                  {cert.verificationUrl && (
+                  {/* {cert.verificationUrl && (
                     <a 
                       href={cert.verificationUrl}
                       target="_blank"
@@ -335,7 +384,7 @@ const Achievements = () => {
                       <ExternalLink className="w-4 h-4" />
                       Verify
                     </a>
-                  )}
+                  )} */}
                 </div>
               </div>
             </div>
@@ -459,6 +508,24 @@ const Achievements = () => {
           </div>
         </motion.div>
       </div>
+      {/* Image Modal */}
+    {isModalOpen && selectedImage && (
+      <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm">
+        <div className="relative max-w-4xl w-full mx-4">
+          <button
+            onClick={() => setIsModalOpen(false)}
+            className="absolute -top-10 right-0 text-white hover:text-gray-300 z-50"
+          >
+            <X className="w-8 h-8" />
+          </button>
+          <img 
+            src={selectedImage} 
+            alt="Certificate" 
+            className="w-full h-auto max-h-[80vh] object-contain rounded-lg"
+          />
+        </div>
+      </div>
+    )}
     </section>
   );
 };

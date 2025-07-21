@@ -69,7 +69,7 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      value: "elena.martinez@chef.com",
+      value: "meaza.mesene@gmail.com",
       description: "Professional inquiries welcome",
       color: "text-blue-600",
       bgColor: "bg-blue-100 dark:bg-blue-900/20"
@@ -77,23 +77,23 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Phone",
-      value: "+971 50 123 4567",
-      description: "Available 9 AM - 6 PM GST",
+      value: "+251 949 030 695",
+      description: "Available 9 AM – 6 PM EAT (East Africa Time)",
       color: "text-green-600",
       bgColor: "bg-green-100 dark:bg-green-900/20"
     },
     {
       icon: MapPin,
       title: "Location",
-      value: "Dubai, UAE",
-      description: "Available for global opportunities",
+      value: "Hawassa, Ethiopia",
+      description: "Available for national and international opportunities",
       color: "text-red-600",
       bgColor: "bg-red-100 dark:bg-red-900/20"
     },
     {
       icon: Globe,
       title: "Languages",
-      value: "English, Spanish, Arabic",
+      value: "Amharic – Native, English – Professional Working Proficiency",
       description: "Multilingual communication",
       color: "text-purple-600",
       bgColor: "bg-purple-100 dark:bg-purple-900/20"
@@ -104,25 +104,25 @@ const Contact = () => {
     {
       icon: Linkedin,
       name: "LinkedIn",
-      url: "https://linkedin.com/in/elena-martinez-chef",
+      // url: "https://linkedin.com/in/elena-martinez-chef",
       color: "text-blue-600 hover:text-blue-700"
     },
     {
       icon: Instagram,
       name: "Instagram",
-      url: "https://instagram.com/chef.elena.martinez",
+      // url: "https://instagram.com/chef.elena.martinez",
       color: "text-pink-600 hover:text-pink-700"
     },
     {
       icon: Twitter,
       name: "Twitter",
-      url: "https://twitter.com/chef_elena_m",
+      // url: "https://twitter.com/chef_elena_m",
       color: "text-sky-600 hover:text-sky-700"
     },
     {
       icon: Facebook,
       name: "Facebook",
-      url: "https://facebook.com/chef.elena.martinez",
+      // url: "https://facebook.com/chef.elena.martinez",
       color: "text-blue-700 hover:text-blue-800"
     }
   ];
@@ -389,7 +389,7 @@ const Contact = () => {
         </div>
 
         {/* Call to Action */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 1.4, duration: 0.8 }}
@@ -419,7 +419,7 @@ const Contact = () => {
               Schedule a Meeting
             </Button>
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );

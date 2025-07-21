@@ -49,33 +49,33 @@ const Footer = () => {
     {
       icon: Linkedin,
       name: "LinkedIn",
-      url: "https://linkedin.com/in/elena-martinez-chef",
+      // url: "https://linkedin.com/in/elena-martinez-chef",
       color: "hover:text-blue-600"
     },
     {
       icon: Instagram,
       name: "Instagram",
-      url: "https://instagram.com/chef.elena.martinez",
+      // url: "https://instagram.com/chef.elena.martinez",
       color: "hover:text-pink-600"
     },
     {
       icon: Twitter,
       name: "Twitter",
-      url: "https://twitter.com/chef_elena_m",
+      // url: "https://twitter.com/chef_elena_m",
       color: "hover:text-sky-600"
     },
     {
       icon: Facebook,
       name: "Facebook",
-      url: "https://facebook.com/chef.elena.martinez",
+      // url: "https://facebook.com/chef.elena.martinez",
       color: "hover:text-blue-700"
     }
   ];
 
   const achievements = [
-    "15+ Years Experience",
-    "50+ Luxury Hotels",
-    "25+ Countries",
+    "9+ Years Experience",
+    "Haile International Hotels and Resorts",
+    // "25+ Countries",
     "Michelin Recognition"
   ];
 
@@ -121,7 +121,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3 text-sm">
                 <Phone className="w-4 h-4 text-amber-500" />
-                <span className="text-gray-300">+971 50 123 4567</span>
+                <span className="text-gray-300">+251949030695</span>
               </div>
               <div className="flex items-center gap-3 text-sm">
                 <MapPin className="w-4 h-4 text-amber-500" />

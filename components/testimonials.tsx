@@ -31,7 +31,7 @@ const Testimonials = () => {
       title: "Ex-Operational Manager",
       company: "Haile Resort Hawassa",
       location: "Hawassa, UAE",
-      image: "https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg?auto=compress&cs=tinysrgb&w=200",
+      image: "/images/user.png",
       rating: 5,
       testimonial: "Chef Meaza, congratulations on being named Third Best Supervisor of the Year! Your hard work, leadership, and positive attitude inspire us every day. Even after the busiest shifts, your dedication and smile never fade. Thank you for making our team stronger and our workplace brighter. Well deserved—we’re so proud of you!.",
       relationship: "Ex-Operational Manager",
@@ -39,64 +39,64 @@ const Testimonials = () => {
     },
     {
       id: 2,
-      name: "Dr. Sarah Al-Mahmoud",
-      title: "Food & Beverage Director",
-      company: "Four Seasons Resort Maldives",
-      location: "Maldives",
-      image: "https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg?auto=compress&cs=tinysrgb&w=200",
+      name: "Chef Getachew Kebede",
+      title: "Executive Chef",
+      company: "Haile Resort – Hawassa",
+      location: "Hawassa, Ethiopia",
+      image: "/images/user.png",
       rating: 5,
-      testimonial: "Working with Elena was an absolute privilege. Her ability to blend international techniques with local ingredients resulted in a dining program that exceeded all our expectations. Her mentorship of our local team was invaluable, and her sustainable approach to sourcing set new standards for our resort.",
-      relationship: "Former Colleague",
-      duration: "2+ years collaboration"
+      testimonial: "Meaza consistently delivers food production excellence while maintaining top-tier hygiene and safety standards. Her dedication to training and mentoring our kitchen team has made her one of our most reliable chefs. She's a true asset to our culinary operation.",
+      // relationship: "Former Colleague",
+      // duration: "2+ years collaboration"
     },
     {
       id: 3,
-      name: "Marcus Thompson",
+      name: "Chef Biruk",
       title: "Executive Chef",
-      company: "Le Bernardin New York",
-      location: "New York, USA",
-      image: "https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg?auto=compress&cs=tinysrgb&w=200",
+      company: "Rori Hotel",
+      location: "Hawassa, Ethiopia",
+      image: "/images/user.png",
       rating: 5,
-      testimonial: "Elena's precision, creativity, and dedication to the craft are exceptional. She consistently delivered dishes that met our Michelin three-star standards while bringing fresh perspectives to our menu. Her work ethic and innovative approach made her an invaluable member of our kitchen brigade.",
-      relationship: "Senior Colleague",
-      duration: "3 years at Le Bernardin"
+      testimonial: "I’ve seen Meaza’s growth in both her technical skill and leadership ability. She brings structure, clarity, and an exceptional eye for kitchen detail. Her ability to manage high-volume kitchen operations while fostering a positive team environment is unmatched.",
+      relationship: "Professional Mentor",
+      duration: "Industry Reference"
     },
     {
       id: 4,
-      name: "Isabella Rodriguez",
-      title: "Food Critic",
-      company: "Conde Nast Traveler",
-      location: "International",
-      image: "https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg?auto=compress&cs=tinysrgb&w=200",
+      name: "Chef Yonas Gelaye",
+      title: "Executive Chef",
+      company: "Haile Hotels & Resorts",
+      location: "Hawassa, Ethiopia",
+      image: "/images/user.png",
       rating: 5,
-      testimonial: "I've dined at Elena's restaurants across three continents, and each experience has been extraordinary. Her ability to tell stories through food, respecting local traditions while pushing culinary boundaries, makes her one of the most compelling chefs of her generation.",
-      relationship: "Industry Expert",
-      duration: "5+ years following her work"
+      testimonial: "Chef Meaza is a committed and passionate professional. She always puts food integrity first and leads by example. Her initiative in applying HACCP and food safety systems has raised the standard in our kitchen operations.",
+      relationship: "Senior Culinary Leader",
+      duration: "Overseen her performance for several years"
     },
-    {
-      id: 5,
-      name: "Ahmed Hassan",
-      title: "Sous Chef",
-      company: "The Ritz-Carlton Dubai",
-      location: "Dubai, UAE",
-      image: "https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg?auto=compress&cs=tinysrgb&w=200",
-      rating: 5,
-      testimonial: "Chef Elena is not just a leader but a mentor who truly cares about developing her team. Under her guidance, I've grown from a junior cook to sous chef. Her patience, knowledge, and willingness to share her expertise have shaped my entire career. She creates an environment where everyone can excel.",
-      relationship: "Team Member",
-      duration: "4+ years mentorship"
-    },
-    {
-      id: 6,
-      name: "Victoria Chen",
-      title: "Food & Wine Editor",
-      company: "Food & Wine Magazine",
-      location: "New York, USA",
-      image: "https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg?auto=compress&cs=tinysrgb&w=200",
-      rating: 5,
-      testimonial: "Elena's commitment to sustainability without compromising on luxury is remarkable. Her innovative use of local, seasonal ingredients has redefined what fine dining can be in the modern era. She's a true pioneer who leads by example in creating a more responsible culinary industry.",
-      relationship: "Industry Observer",
-      duration: "Regular coverage since 2019"
-    }
+    // {
+    //   id: 5,
+    //   name: "Ahmed Hassan",
+    //   title: "Sous Chef",
+    //   company: "The Ritz-Carlton Dubai",
+    //   location: "Dubai, UAE",
+    //   image: "https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg?auto=compress&cs=tinysrgb&w=200",
+    //   rating: 5,
+    //   testimonial: "Chef Elena is not just a leader but a mentor who truly cares about developing her team. Under her guidance, I've grown from a junior cook to sous chef. Her patience, knowledge, and willingness to share her expertise have shaped my entire career. She creates an environment where everyone can excel.",
+    //   relationship: "Team Member",
+    //   duration: "4+ years mentorship"
+    // },
+    // {
+    //   id: 6,
+    //   name: "Victoria Chen",
+    //   title: "Food & Wine Editor",
+    //   company: "Food & Wine Magazine",
+    //   location: "New York, USA",
+    //   image: "https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg?auto=compress&cs=tinysrgb&w=200",
+    //   rating: 5,
+    //   testimonial: "Elena's commitment to sustainability without compromising on luxury is remarkable. Her innovative use of local, seasonal ingredients has redefined what fine dining can be in the modern era. She's a true pioneer who leads by example in creating a more responsible culinary industry.",
+    //   relationship: "Industry Observer",
+    //   duration: "Regular coverage since 2019"
+    // }
   ];
 
   const nextTestimonial = () => {
@@ -305,7 +305,7 @@ const Testimonials = () => {
         </motion.div>
 
         {/* Trust Indicators */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 1.0, duration: 0.8 }}
@@ -329,7 +329,7 @@ const Testimonials = () => {
               <div className="text-sm text-muted-foreground">Average Rating</div>
             </div>
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );

@@ -105,7 +105,7 @@ const About = () => {
             transition={{ delay: 0.4, duration: 0.8 }}
             className="space-y-8"
           >
-            <div className="relative w-[40vw] h-50">
+            <div className="relative w-[20vw] h-30">
               <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl">
                 <img
                  src='/images/maedit3h.png'
@@ -123,7 +123,7 @@ const About = () => {
                 className="absolute -bottom-6 -right-6 bg-white dark:bg-gray-800 rounded-2xl p-4 shadow-xl"
               >
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-amber-600">15+</div>
+                  <div className="text-2xl font-bold text-amber-600">9+</div>
                   <div className="text-sm text-muted-foreground">Years</div>
                 </div>
               </motion.div>
@@ -226,7 +226,7 @@ const About = () => {
         </div>
 
         {/* Achievement highlights */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 1.2, duration: 0.8 }}
@@ -248,7 +248,7 @@ const About = () => {
             <div className="text-3xl font-bold text-yellow-600">15+</div>
             <div className="text-sm text-muted-foreground">Awards</div>
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );
