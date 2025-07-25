@@ -82,7 +82,7 @@ const Portfolio = () => {
       category: "Farm-to-Kitchen Initiative",
       description: "Created balanced dishes using only locally sourced produce, demonstrating the nutritional and flavor potential of Ethiopian-grown ingredients.",
       // image: "https://images.pexels.com/photos/3186654/pexels-photo-3186654.jpeg?auto=compress&cs=tinysrgb&w=800",
-            image: '/images/5.png',
+            image: '/images/e1.png',
       location: "Haile Hotels – Internal Chef Challenge",
       date: "2022",
       tags: ["Farm-to-Table · Nutrition · Sustainability"],

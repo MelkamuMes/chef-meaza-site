@@ -61,7 +61,7 @@ const Experience = () => {
       skills: ["Team Leadership","Fusion Cuisine", "Staff Training"
         ],
       // image: "https://images.pexels.com/photos/3298641/pexels-photo-3298641.jpeg?auto=compress&cs=tinysrgb&w=400"
-      image: '/images/5.png'
+      image: '/images/e2.png'
     },
     // {
     //   // title: "Chef de Cuisine",
@@ -179,7 +179,7 @@ const Experience = () => {
             <Users className="w-5 h-5 text-blue-600 mx-auto mb-1" />
             <div className="text-xs text-muted-foreground">Team Size</div>
             <div className="text-lg font-bold text-blue-600">
-              {index === 0 ? '45+' : index === 1 ? '30+' : '15+'}
+              {index === 0 ? '15+' : index === 1 ? '15+' : '15+'}
             </div>
           </div>
         </motion.div>

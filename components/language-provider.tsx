@@ -27,7 +27,7 @@ const translations = {
     'hero.greeting': 'Hello, I\'m',
     'hero.name': 'Meaza Mesene',
     'hero.title': 'International Culinary Expert',
-    'hero.subtitle': 'Passionate chef with 9+ years of experience in Haile Grand International luxury hotel and resort',
+    'hero.subtitle': 'Passionate chef with 9+ years of experience in Haile International hotel and resort',
     'hero.cta.resume': 'Download Resume',
     'hero.cta.contact': 'Get in Touch',
     
@@ -84,7 +84,7 @@ const translations = {
     'hero.greeting': 'ሰላም፣ እኔ',
     'hero.name': 'መአዛ መሰኔ',
     'hero.title': 'ዓለም አቀፍ የምግብ ዝግጅት ባለሙያ',
-    'hero.subtitle': 'በሃይሌ ግራንድ ኢንተርናሽናል የቅንጦት ሆቴል እና ሪዞርት ከ9 አመት በላይ ልምድ ያላት ሼፍ',
+    'hero.subtitle': 'በሃይሌ ኢንተርናሽናል ሆቴል እና ሪዞርት ከ9 አመት በላይ ልምድ ያላት ሼፍ ነኝ',
     'hero.cta.resume': 'ሪዙሜ አውርድ',
     'hero.cta.contact': 'አግኙኝ',
     

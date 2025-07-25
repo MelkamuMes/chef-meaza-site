@@ -9,10 +9,17 @@ import Image from 'next/image';
 const Hero = () => {
   const { t } = useLanguage();
 
-  const handleDownloadResume = () => {
+  // const handleDownloadResume = () => {
+  //   const link = document.createElement('a');
+  //   link.href = '/Meaza Cv.docx';
+  //   link.download = 'Meaza Cv.docx';
+  //   link.click();
+  // };
+
+   const handleDownloadResume = () => {
     const link = document.createElement('a');
-    link.href = '/Meaza Cv.pdf';
-    link.download = 'Meaza Cv.pdf';
+    link.href = '/Meaza Cv (2).pdf';
+    link.download = 'Meaza Cv (2).pdf';
     link.click();
   };
 

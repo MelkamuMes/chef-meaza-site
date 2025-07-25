@@ -493,7 +493,7 @@ const Footer = () => {
                 <span className="font-semibold text-amber-400">Award Winner</span>
               </div>
               <p className="text-xs text-gray-300">
-                World Culinary Awards - Chef of the Year 2023
+                Best Supervisor of the Year - 2023
               </p>
             </div>
           </motion.div>
